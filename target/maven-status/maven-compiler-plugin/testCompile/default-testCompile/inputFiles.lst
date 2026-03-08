@@ -7,6 +7,7 @@
 /home/preetipilkhwal/Workspaces/workspace2/OpencartV26/src/test/java/testCases/LoginTest.java
 /home/preetipilkhwal/Workspaces/workspace2/OpencartV26/src/test/java/testCases/TC001_AccountRegistrationTest.java
 /home/preetipilkhwal/Workspaces/workspace2/OpencartV26/src/test/java/testCases/TC003_LoginDDT.java
+/home/preetipilkhwal/Workspaces/workspace2/OpencartV26/src/test/java/testCases/TC_04_ShoppingCart.java
 /home/preetipilkhwal/Workspaces/workspace2/OpencartV26/src/test/java/utilities/DataProviders.java
 /home/preetipilkhwal/Workspaces/workspace2/OpencartV26/src/test/java/utilities/ExcelUtility.java
 /home/preetipilkhwal/Workspaces/workspace2/OpencartV26/src/test/java/utilities/ExtentReportManager.java

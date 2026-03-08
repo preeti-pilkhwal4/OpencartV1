@@ -9,11 +9,23 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Master Suite</th></tr>
-<tr><td><a href="#t0">Test</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">10,277</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">35,612</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Master Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">testCases.LoginTest</td><td><a href="#m0">verify_login</a></td><td rowspan="1">1771690744683</td><td rowspan="1">2194</td></tr><tr class="passedodd"><td rowspan="1">testCases.TC001_AccountRegistrationTest</td><td><a href="#m1">verify_account_Registration</a></td><td rowspan="1">1771690738971</td><td rowspan="1">3510</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Master Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">testCases.LoginTest</td><td><a href="#m0">verify_login</a></td><td rowspan="1">1771955696733</td><td rowspan="1">15186</td></tr><tr class="failedodd"><td rowspan="1">testCases.TC001_AccountRegistrationTest</td><td><a href="#m1">verify_account_Registration</a></td><td rowspan="1">1771955678944</td><td rowspan="1">15240</td></tr></tbody>
 </table>
-<h2>Test</h2><h3 id="m0">testCases.LoginTest#verify_login</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">testCases.TC001_AccountRegistrationTest#verify_account_Registration</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Test</h2><h3 id="m0">testCases.LoginTest#verify_login</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: null
+	at testCases.LoginTest.verify_login(LoginTest.java:39)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 33 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">testCases.TC001_AccountRegistrationTest#verify_account_Registration</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Test failed due to exception: Expected condition failed: waiting for element to be clickable, but the element was not visible.
+(tried for 15 seconds with 500 milliseconds interval)
+Build info: version: &apos;4.40.0&apos;, revision: &apos;b3333f1&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.8.0-65-generic&apos;, java.version: &apos;11.0.28&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.169, chrome: {chromedriverVersion: 143.0.7499.192 (be2c1f4fd45..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:34379}, goog:processID: 753831, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:34379/devtoo..., se:cdpVersion: 143.0.7499.169, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 0db1de7f9150e4c057efb8acb240b35b
+	at testCases.TC001_AccountRegistrationTest.verify_account_Registration(TC001_AccountRegistrationTest.java:62)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

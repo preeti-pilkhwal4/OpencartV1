@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Master_Suite" class="navigator-link">
-              <span class="suite-name border-passed">Master Suite</span>
+              <span class="suite-name border-failed">Master Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,26 +92,26 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">2 methods, 2 failed,   </span>
                   </li>
                   <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Master_Suite" class="hide-methods passed suite-Master_Suite"> (hide)</a> <!-- hide-methods passed suite-Master_Suite -->
-                      <a href="#" panel-name="suite-Master_Suite" class="show-methods passed suite-Master_Suite"> (show)</a> <!-- show-methods passed suite-Master_Suite -->
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Master_Suite" class="hide-methods failed suite-Master_Suite"> (hide)</a> <!-- hide-methods failed suite-Master_Suite -->
+                      <a href="#" panel-name="suite-Master_Suite" class="show-methods failed suite-Master_Suite"> (show)</a> <!-- show-methods failed suite-Master_Suite -->
                     </span>
-                    <div class="method-list-content passed suite-Master_Suite">
+                    <div class="method-list-content failed suite-Master_Suite">
                       <span>
-                        <img src="passed.png" width="3%"/>
+                        <img src="failed.png" width="3%"/>
                         <a href="#" panel-name="suite-Master_Suite" title="testCases.TC001_AccountRegistrationTest" class="method navigator-link" hash-for-method="verify_account_Registration">verify_account_Registration</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
+                        <img src="failed.png" width="3%"/>
                         <a href="#" panel-name="suite-Master_Suite" title="testCases.LoginTest" class="method navigator-link" hash-for-method="verify_login">verify_login</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-Master_Suite -->
+                    </div> <!-- method-list-content failed suite-Master_Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -123,9 +123,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Master_Suite" class="panel Master_Suite">
-          <div class="suite-Master_Suite-class-passed">
+          <div class="suite-Master_Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
               <span class="class-name">testCases.TC001_AccountRegistrationTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -134,13 +134,24 @@
                   <a name="verify_account_Registration">
                   </a> <!-- verify_account_Registration -->
                   <span class="method-name">verify_account_Registration</span>
+                  <div class="stack-trace">java.lang.AssertionError: Test failed due to exception: Expected condition failed: waiting for element to be clickable, but the element was not visible.
+(tried for 15 seconds with 500 milliseconds interval)
+Build info: version: &apos;4.40.0&apos;, revision: &apos;b3333f1&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.8.0-65-generic&apos;, java.version: &apos;11.0.28&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.169, chrome: {chromedriverVersion: 143.0.7499.192 (be2c1f4fd45..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:34379}, goog:processID: 753831, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:34379/devtoo..., se:cdpVersion: 143.0.7499.169, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 0db1de7f9150e4c057efb8acb240b35b
+	at testCases.TC001_AccountRegistrationTest.verify_account_Registration(TC001_AccountRegistrationTest.java:62)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Master_Suite-class-passed -->
-          <div class="suite-Master_Suite-class-passed">
+          </div> <!-- suite-Master_Suite-class-failed -->
+          <div class="suite-Master_Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
               <span class="class-name">testCases.LoginTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -149,10 +160,15 @@
                   <a name="verify_login">
                   </a> <!-- verify_login -->
                   <span class="method-name">verify_login</span>
+                  <div class="stack-trace">java.lang.AssertionError: null
+	at testCases.LoginTest.verify_login(LoginTest.java:39)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Master_Suite-class-passed -->
+          </div> <!-- suite-Master_Suite-class-failed -->
         </div> <!-- panel Master_Suite -->
         <div panel-name="test-xml-Master_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -243,16 +259,16 @@ data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'verify_account_Registration')
 data.setCell(0, 2, 'testCases.TC001_AccountRegistrationTest')
-data.setCell(0, 3, 3510);
+data.setCell(0, 3, 15240);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'verify_login')
 data.setCell(1, 2, 'testCases.LoginTest')
-data.setCell(1, 3, 2194);
+data.setCell(1, 3, 15186);
 window.suiteTableData['Master_Suite']= { tableData: data, tableDiv: 'times-div-Master_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 5 seconds</span>
+              <span class="suite-total-time">Total running time: 30 seconds</span>
               <div id="times-div-Master_Suite">
               </div> <!-- times-div-Master_Suite -->
             </div> <!-- times-div -->
@@ -284,27 +300,31 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">verify_account_Registration</span>
-                <span class="method-start">2166 ms</span>
+                <span class="method-start">2323 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">5690 ms</span>
+                <span class="method-start">17626 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testCases.LoginTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setup(linux, chrome)</span>
-                <span class="method-start">5771 ms</span>
+                <span class="method-start">17701 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">verify_login</span>
-                <span class="method-start">7878 ms</span>
+                <span class="method-start">20112 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">10074 ms</span>
+                <span class="method-start">35369 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

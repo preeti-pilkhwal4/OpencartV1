@@ -43,3 +43,10 @@
 2026-02-21 21:49:02,481 {HH:mm:ss.SSS}[main] INFO  testCases.TC001_AccountRegistrationTest - **** Finished TC001_AccountRegistrationTest ****
 2026-02-21 21:49:04,684 {HH:mm:ss.SSS}[main] INFO  testCases.LoginTest - ****Starting logintest****
 2026-02-21 21:49:06,877 {HH:mm:ss.SSS}[main] INFO  testCases.LoginTest - Finished Login Test
+2026-02-24 23:20:35,531 {HH:mm:ss.SSS}[main] DEBUG org.testng.TestNG - suiteXmlPath: "/home/preetipilkhwal/Workspaces/workspace2/OpencartV26/testng.xml"
+2026-02-24 23:20:48,182 {HH:mm:ss.SSS}[main] INFO  testCases.TC001_AccountRegistrationTest - **** Starting TC001_AccountRegistrationTest ****
+2026-02-24 23:21:06,712 {HH:mm:ss.SSS}[main] INFO  testCases.LoginTest - ****Starting logintest****
+2026-02-24 23:22:49,414 {HH:mm:ss.SSS}[main] DEBUG org.testng.TestNG - suiteXmlPath: "/home/preetipilkhwal/Workspaces/workspace2/OpencartV26/testng.xml"
+2026-02-24 23:24:36,298 {HH:mm:ss.SSS}[main] DEBUG org.testng.TestNG - suiteXmlPath: "/home/preetipilkhwal/Workspaces/workspace2/OpencartV26/testng.xml"
+2026-02-24 23:24:38,946 {HH:mm:ss.SSS}[main] INFO  testCases.TC001_AccountRegistrationTest - **** Starting TC001_AccountRegistrationTest ****
+2026-02-24 23:24:56,734 {HH:mm:ss.SSS}[main] INFO  testCases.LoginTest - ****Starting logintest****
