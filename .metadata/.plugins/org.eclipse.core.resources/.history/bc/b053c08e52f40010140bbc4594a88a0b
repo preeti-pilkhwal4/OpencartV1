@@ -1,0 +1,52 @@
+package day34;
+
+import java.time.Duration;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class DatePickerDemo {
+
+	public static void main(String[] args) {
+
+		WebDriver driver= new ChromeDriver();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		
+		driver.get("https://jqueryui.com/datepicker/");
+		driver.manage().window().maximize();
+		
+		//Switch to frame as datepicker is inside the frame.
+		driver.switchTo().frame(0); 		//since we have only one frame
+		//driver.findElement(By.xpath("//input[@id='datepicker']")).click();
+		
+		//Method1: Using sendkeys() if we have the option to enter date in the date picker field in web application.
+		//driver.findElement(By.xpath("//input[@id='datepicker']")).sendKeys("04/19/2026"); 		// the format is mm/dd/yyyy
+		
+		//Method2: using date picker
+		
+		String year="2026", month="April",date="19"; 		//everything in the webapp is string
+		driver.findElement(By.xpath("//input[@id='datepicker']")).click(); 		//clicking date picker
+		
+		//Select month and year in the date picker
+		while(true) 			//as no. of iterations are not known
+		{
+			String currentMonth=driver.findElement(By.xpath("//span[@class='ui-datepicker-month'] ")).getText(); 		//return actual month 
+			String currentYear=driver.findElement(By.xpath("//span[@class='ui-datepicker-year'] ")).getText(); 			//return actual year
+			
+			if(currentMonth.equals(month)&&currentYear.equals(year))
+			{
+				break;
+			}
+			//click on next icon for selecting future date
+			//driver.findElement(By.xpath("//span[@class='ui-icon ui-icon-circle-triangle-e'] ")).click();
+			
+			//click on previous icon if past year month needs to be selected.
+			driver.findElement(By.xpath("///span[@class='ui-icon ui-icon-circle-triangle-w']")).click();
+		}
+		
+		
+		
+	}
+
+}

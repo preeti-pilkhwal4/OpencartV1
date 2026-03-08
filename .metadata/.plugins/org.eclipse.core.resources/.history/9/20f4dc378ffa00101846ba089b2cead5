@@ -1,0 +1,33 @@
+package day43;
+
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+public class HardVsSoftAsertions {
+
+	@Test
+	void test_hardAssertions()
+	{
+		System.out.println("Testing");
+		System.out.println("Testing");
+		
+		Assert.assertEquals(1,2); 	// if it is true only then the below statements will be executed
+		
+		System.out.println("Testing");
+		System.out.println("Testing");
+	}
+
+	@Test
+	void test_softAssertions()
+	{
+		System.out.println("Testing");
+		System.out.println("Testing");
+		
+		Assert.assertEquals(1,2); 	// if it is true only then the below statements will be executed
+		
+		System.out.println("Testing");
+		System.out.println("Testing");
+	}
+	
+	
+}

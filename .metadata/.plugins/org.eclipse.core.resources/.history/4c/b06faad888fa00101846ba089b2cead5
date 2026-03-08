@@ -1,0 +1,19 @@
+package day43;
+
+import org.testng.Assert;
+
+public class HardAssertions {
+
+	void test()
+	{
+		Assert.assertEquals("xyz","xyz");
+		Assert.assertEquals(123,345);
+		Assert.assertEquals("abc",123);
+		Assert.assertEquals("123",123);
+		
+		Assert.assertNotEquals(123,123); 	//false
+	}
+	
+	
+	
+}

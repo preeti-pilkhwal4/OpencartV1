@@ -1,0 +1,30 @@
+package day34;
+
+import java.time.Duration;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class DatePickerDemo {
+
+	public static void main(String[] args) {
+
+		WebDriver driver= new ChromeDriver();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		
+		driver.get("https://jqueryui.com/datepicker/");
+		driver.manage().window().maximize();
+		
+		//Switch to frame as datepicker is inside the frame.
+		driver.switchTo().frame(0); 		//since we have only one frame
+		//driver.findElement(By.xpath("//input[@id='datepicker']")).click();
+		
+		//Method1: Using sendkeys() if we have the option to enter date in the date picker field in web application.
+		driver.findElement(By.xpath("//input[@id='datepicker']")).click();
+		
+		//Method2: using date picker
+		
+	}
+
+}
