@@ -1,0 +1,13 @@
+package day22;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.WebDriver;
+
+public class LocatoreDemo {
+
+	public static void main(String[] args) {
+		
+		WebDriver driver=new ChromeDriver();
+		
+	}
+
+}
